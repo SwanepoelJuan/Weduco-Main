@@ -1,0 +1,35 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:gray">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @*<a href="~/Home/Index/">
+                <img src="~/Content/Pictures/Wedoco-logo.png" height="150" alt="Wedoco" />
+             </a>*@
+            <!--@Html.ActionLink("WeDoCo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })-->
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Team", "Team", "Team")</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
+                       id="Products"style="background-color:gray">Products <span class="caret"></span></a>
+                    <div class="dropdown-menu">
+                        <a class=" dropdown-item">@Html.ActionLink("All Products","Products","Products")</a>
+                        <div class=" dropdown-divider"></div>
+                        <a class="dropdown-item" style="color:white">@Html.ActionLink("Web","Web","Products")</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" style="color:white">@Html.ActionLink("Computers", "Computers", "Products")</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+                <li>@Html.ActionLink("Contact", "Contact", "Contact")</li>
+            </ul>
+        </div>
+    </div>
+</div>

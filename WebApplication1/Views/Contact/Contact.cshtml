@@ -1,0 +1,40 @@
+﻿<h2>@ViewBag.Message</h2>
+<div>
+    <strong>
+        Enter your details and we'll contact you.<br />
+    </strong>
+</div>
+<form>
+    <fieldset id="ContactInfo">
+        <div class=" form-group row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Email">Email Address</label><br />
+                    <small style="color : red">This is required</small>
+                    <input type="email" id="Email" class="form-control" placeholder="Enter Email" required="true" />
+                    <small id="emailHelp" class="text-muted">We'll Never share this with anyone.</small><br />
+                    <label for="Name">Name and Surname</label><br />
+                    <small style="color:red">This is required</small>
+                    <input type="text" class="form-control" placeholder="Name" />
+                    <input type="text" class="form-control" placeholder="Surname" />
+                    <small id="Optional" class="text-muted">Optional number and we'll call you.</small>
+                    <input type="tel" class="form-control" id="Optional Number" placeholder="0000000000" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" form-group">
+                    <label for="Optional Message">Optional: Tell us what the inquiry is about</label>
+                    <textarea class=" form-control" id="Optional Message" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <button type="button" class="btn btn-primary btn-sm btn-block">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<div>
+    @Html.Partial("_ContactAdresses")
+</div>

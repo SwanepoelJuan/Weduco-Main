@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeDoCo</title>
+    @Styles.Render("~/Content/bootstrap-darkly.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @Html.Partial("_Navbar")
+    <div class="container body-content">
+        <div>
+            @RenderBody()
+        </div>
+        
+        <hr />
+        <footer>
+            <div>
+                <p>WeDoCo PTY Ltd.</p>
+                <a href="~/Home/About/">Click here to learn more</a><br />
+                <a href="~/Home/Contact">Contact Information</a>
+            </div>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
